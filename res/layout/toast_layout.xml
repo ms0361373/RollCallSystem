@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/toast_layout"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TV"
+        style="@style/H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFCC22"
+        android:textSize="28dp"/>
+
+</LinearLayout>

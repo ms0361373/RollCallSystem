@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rollcallsystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rollcallicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name="com.rollcallsystem.MQTT.PushService" >
+        </service>
+
+        <activity
+            android:name="com.rollcallsystem.MainActivity.FirstActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/filter_nfc" />
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.MainActivity.SecondActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.FirstActivity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.SecondActivity.ClassDataUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.SecondActivity.UserDataActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.SecondActivity.ClassDataManage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.SecondActivity.ClassRollCallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.ClassDataManageActivity.CardRegister"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.ClassRollCallActivity.RollCallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.ClassDataManageActivity.StudentRecord"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rollcallsystem.SecondActivity.DataUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.rollcallsystem.FirstActivity.SetupActivity"></activity>
+    </application>
+
+</manifest>

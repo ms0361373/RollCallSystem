@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/fa"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#444444"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TV_Title"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="學生證卡號同步"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/IB"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/databaseupdate" />
+
+        <ImageButton
+            android:id="@+id/IB1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/databasedowload" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/TV_1"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Update"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp" />
+        <TextView
+            android:id="@+id/TV_2"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="Download"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

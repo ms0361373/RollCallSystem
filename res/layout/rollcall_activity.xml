@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fa"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TV_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="課程"
+        android:textColor="#CCffffff"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/TV_SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="課程"
+        android:textColor="#CCffffff"
+        android:textSize="26dp" />
+
+    <DigitalClock
+        android:id="@+id/MA2_Clock"
+        style="@style/H1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="DigitalClock"
+        android:textColor="#CCffffff"
+        android:textSize="40dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#293a46" />
+
+    <LinearLayout
+        android:id="@+id/LL_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TV_Start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="開始時間:"
+                android:textColor="#CCffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TV_Start1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1991/10/17 16:44:03"
+                android:textColor="#CCffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TV_End"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="120dp"
+                android:text="預計結束時間:"
+                android:textColor="#CCffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TV_End1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1991/10/17 16:44:03"
+                android:textColor="#CCffffff"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#293a46" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/ET_StuID"
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:capitalize="characters"
+            android:ems="8"
+            android:hint="请输入學號"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/BT_Check"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_check"
+            android:text="確定"
+            android:textColor="#DDDDDD"
+            android:textSize="32dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="學生姓名"
+        android:textColor="#CCffffff"
+        android:textSize="46dp" />
+
+    <TextView
+        android:id="@+id/TV02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="學生學號"
+        android:textColor="#CCffffff"
+        android:textSize="46dp" />
+
+    <TextView
+        android:id="@+id/TV03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="點名狀態"
+        android:textColor="#CCffffff"
+        android:textSize="46dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#293a46" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/BT_Manually"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bt_shape"
+                    android:enabled="false"
+                    android:text="手動輸入"
+                    android:textColor="#55AA00"
+                    android:textSize="36dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/IB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bt_s"
+                    android:scaleType="center"
+                    android:src="@drawable/file_search"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/BT_Start"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bt_shape"
+                    android:text="開始點名"
+                    android:textColor="#55AA00"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/BT_End"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bt_shape"
+                    android:text="結束點名"
+                    android:textColor="#C63300"
+                    android:textSize="36dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/TV04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="請將學生證靠至裝置後方"
+                    android:textColor="#CCffffff"
+                    android:textSize="26dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/IB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bt_s"
+                    android:scaleType="center"
+                    android:src="@drawable/user_add" />
+
+                <ImageButton
+                    android:id="@+id/IB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bt_s"
+                    android:scaleType="center"
+                    android:src="@drawable/speaker" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

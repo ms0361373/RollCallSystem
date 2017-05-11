@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#EF000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        style="@style/H1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+</LinearLayout>

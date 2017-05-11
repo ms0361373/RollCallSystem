@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fa"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#444444"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TV_Title"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="學生名單"
+            android:textColor="#FFFFFF"
+            android:textSize="38dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#444444" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="學號"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="卡號"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/BT_Recalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:text="重新計算" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/LV_List"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.23"
+        android:background="#bfffffff" >
+    </ListView>
+
+    <Button
+        android:id="@+id/BT_UPDATA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="資料匯出"
+        android:textSize="32dp" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <TextView
+            android:id="@+id/TV1"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/TV2"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="學號"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/TV3"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="紀錄"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/BT_DayOff"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="14dp"
+            android:text="請假登記" />
+
+    </LinearLayout>
+
+</LinearLayout>

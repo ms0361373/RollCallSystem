@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    android:background="@drawable/fa"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#444444"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TV_Title"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="學生資料編輯"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/TV_Name"
+                style="@style/H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="姓名:"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/ET_Name"
+                style="@style/H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:ems="8"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BT_S"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+             android:background="@drawable/bt_shape"
+             android:layout_marginRight="20dp"
+             android:layout_gravity="right"
+             android:textSize="22dp"
+            android:text="搜尋"
+            android:visibility="gone"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TV_ID"
+                style="@style/H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="學號:"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/ET_ID"
+                style="@style/H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:enabled="false"
+                android:ems="8"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TV_CardID"
+                style="@style/H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="卡號:"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/ET_CardID"
+                style="@style/H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"
+                android:ems="8"
+                android:enabled="false"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BT_Save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#6Cffffff"
+        android:text="儲存"
+        android:textColor="#000000"
+        android:textSize="26dp" />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fa"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="伺服器 IP:"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/ET_01"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+             android:text="0"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/ET_02"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+             android:text="0"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/ET_03"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+             android:text="0"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/ET_04"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+             android:text="0"
+            android:ems="10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BT_Send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="設置" />
+
+</LinearLayout>

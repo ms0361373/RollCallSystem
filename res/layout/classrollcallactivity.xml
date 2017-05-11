@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fa"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#444444"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TV_Title"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="課程名單"
+            android:textColor="#FFFFFF"
+            android:textSize="38dp" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/EPListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#bfffffff" >
+    </ExpandableListView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    android:background="@drawable/fa"
+    android:orientation="vertical" >
+    
+     	<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#444444"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TV_Title"
+                    style="@style/H1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="課程"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp" />
+            </LinearLayout>
+    
+    <Button
+        android:id="@+id/BT_CardRegister"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="#6Cffffff"
+        android:text="卡號註冊"
+        android:textSize="26dp"
+        android:textColor="#000000" />
+    
+    
+    <Button
+        android:id="@+id/BT_StudentRecord"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="#6Cffffff"
+        android:text="缺曠紀錄"
+        android:textSize="26dp"
+        android:textColor="#000000" />
+    
+    <Button
+        android:id="@+id/BT_SynchronizeData"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="#6Cffffff"
+        android:text="同步資料"
+        android:textSize="26dp"
+        android:textColor="#000000" />
+    
+    <Button
+        android:id="@+id/BT_Leave"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="#6Cffffff"
+        android:text="離開"
+        android:textSize="26dp"
+        android:textColor="#000000" />
+    
+
+</LinearLayout>

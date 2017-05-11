@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fa"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/BT_ClassRollCall"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:background="#6Cffffff"
+        android:text="課程點名"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/BT_DataManager"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#6Cffffff"
+        android:text="課程資料管理"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/BT_UserData"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#6Cffffff"
+        android:text="使用者資料"
+        android:textColor="#000000" />
+    
+    
+    <Button
+        android:id="@+id/BT_DataUpdata"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#6Cffffff"
+        android:text="資料上傳"
+        android:textColor="#000000" />
+    
+
+    <Button
+        android:id="@+id/BT_SystemUpdata"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#6Cffffff"
+        android:text="資料更新"
+        android:textColor="#000000" />
+    
+    <TextView
+        android:id="@+id/TV02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp"
+        android:text="RollCallSystem V2.0"
+        android:textColor="#CCffffff" />
+
+</LinearLayout>
